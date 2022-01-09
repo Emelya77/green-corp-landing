@@ -48,12 +48,22 @@ button {
 }
 .about__image {
   width: 500px;
+
 }
 .about__sun-image {
   width: 100px;
   height: 100px;
-  
+
 }
+
+.about__images{
+
+ animation-duration: 2s;
+animation-iteration-count: 1;
+ 
+}
+
+
 .about h1 {
   font-size: 70px;
   line-height: 76px;
@@ -71,6 +81,14 @@ button {
 }
 .about__info {
   max-width: 550px;
+
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+
+
+
+
 }
 .form__container {
   width: 550px;
@@ -344,6 +362,8 @@ margin-bottom: 15px;
       flex-direction: column;
   }
 }
+
+
 
   
   
