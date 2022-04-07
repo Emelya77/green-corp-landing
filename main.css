@@ -45,6 +45,7 @@ button {
   background: url("img/back.png") no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .about__image {
   width: 500px;
@@ -176,6 +177,8 @@ button:hover {
 background-color: #f6980c ;
 box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
 
+
+
 }
 
 button {
@@ -189,6 +192,7 @@ padding-left: 20px;
 padding-right: 20px ;
 font-weight: 600;
 font-size: 16px;
+
 
 
 }
@@ -245,29 +249,6 @@ margin-bottom: 15px;
   position: absolute;
 }
 
-@media (max-width: 1024px) {
-  .about {
-      padding: 115px 20px;
-  }
-
-  .about h1 {
-      font-size: 36px;
-      line-height: 40px;
-  }
-
-  .about__image {
-      width: 280px;
-  }
-
-  .about__sun-image {
-      width: 75px;
-      height: 75px;
-  }
-}
-
-
-
-
 @media (max-width: 720px) {
   .features {
       padding: 50px 10px;
@@ -297,6 +278,7 @@ margin-bottom: 15px;
   .features__savings-box {
       margin-right: 0;
       margin-bottom: 30px;
+      height: 50%;
   }
   .promo {
       flex-direction: column-reverse;
@@ -313,6 +295,24 @@ margin-bottom: 15px;
 }
 
 
+@media (max-width: 1024px) {
+  .about {
+      padding: 115px 20px;
+  }
+
+  .about h1 {
+      font-size: 36px;
+      line-height: 40px;
+  }
+
+  .about__image {
+      width: 280px;
+  }
+
+  .about__sun-image {
+      width: 75px;
+      height: 75px;
+  }
 
 @media (max-width: 720px) {
   header {
@@ -361,7 +361,10 @@ margin-bottom: 15px;
   .footer__container {
       flex-direction: column;
   }
+
 }
+}
+
 
 
 
@@ -459,6 +462,7 @@ margin-bottom: 15px;
  background-color: #1D263A;
  box-shadow: 0 6px 0 rgb(29 38 58 / 20%);
  margin-right: 30px;
+ 
 }
  .stars {
  color: #ff7039;
@@ -555,14 +559,15 @@ margin-bottom: 15px;
  margin-left: 5px;
 } 
 
-
-  
-  
-  
-
-
-
-
-
-
+button:hover {
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transition: background-color 0.3s ease-in;
+  }
+  .orb-canvas {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+  } 
 
